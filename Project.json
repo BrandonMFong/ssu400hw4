@@ -1,0 +1,15 @@
+{
+    "ConstantDefinitions": {
+        "ReferenceFrameNumber": 6
+    },
+    "Paths": [
+        { "Path": "./src" },
+        { "Path": "./src/save" }
+    ],
+    "Save": [{
+            "VariableName": "RefFrame_ycbcr",
+            "Path": "./Outputs/Ref Image ycbcr Extract.jpg",
+            "Type": "Image"
+        }
+    ]
+}
