@@ -9,8 +9,7 @@ to = input('Enter value for to: ')
 % t = input('Enter value for t: ')
 V = input('Enter value for V: ')
 
-fprintf('f(t) = %f*rect((%f-%f)/%f)\n',V, t, to, T);
+fprintf('f(t) = %f*rect((t-%f)/%f)\n',V, to, T);
 
 t = [-100:0.01:100];
 ft = V * rect((t - to)/T);
- 
