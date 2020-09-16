@@ -11,7 +11,8 @@ V = input('Enter value for V: ')
 
 fprintf('f(t) = %f*rect((t-%f)/%f)\n',V, to, T);
 
-t = [-100:0.01:100];
-ft = V * rect((t. - to)/T);
-x = [0:0.01:10];
-y = sin(x);
+% t = [-100:0.01:100];
+ft = zeros(1,) % TODO finish loading array 
+for t = -100:0.01:100
+    ft = V * rect((t - to)/T);
+end
