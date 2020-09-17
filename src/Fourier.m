@@ -13,7 +13,7 @@ V = input('Enter value for V: ')
 fprintf('f(t) = %f*rect((t-%f)/%f)\n',V, to, T);
 
 % t = [-100:0.01:100];
-ft = zeros(1,const.Xaxis*(2/100)) % TODO finish loading array 
+ft = zeros(1,const.Xaxis*(2*100)) % TODO finish loading array 
 % for t = -const.Xaxis:const.Xaxis/100:const.Xaxis
 %     ft = V * rect((t - to)/T);
 % end
