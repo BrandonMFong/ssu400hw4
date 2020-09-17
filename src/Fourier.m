@@ -22,3 +22,5 @@ end
 
 t = -const.Xaxis:const.Xaxis/(10000):const.Xaxis;
 plot(t,ft);
+
+ylim([-5 5])
