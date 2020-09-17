@@ -13,16 +13,17 @@ V = input('Enter value for V: ')
 fprintf('f(t) = %f*rect((t-%f)/%f)\n',V, to, T);
 
 % t = [-100:0.01:100];
-i = 1;
-ft = zeros(1,const.Xaxis*(2*100)); % TODO finish loading array 
-for t = -const.Xaxis:const.Xaxis/(10000):const.Xaxis
-    ft(1,i) = V * rect((t - to)/T);
-    i = i + 1;
+idx = 1;
+ft = zeros(1,const.Taxis*(2*100)); % TODO finish loading array 
+for t = -const.Taxis:const.Taxis/(10000):const.Taxis
+    ft(1,idx) = V * rect((t - to)/T);
+    idx = idx + 1;
 end
 
-t = -const.Xaxis:const.Xaxis/(10000):const.Xaxis;
+t = -const.Taxis:const.Taxis/(10000):const.Taxis;
 plot(t,ft);
 
 ylim([-5 5])
 
 % TODO get fourier transform
+

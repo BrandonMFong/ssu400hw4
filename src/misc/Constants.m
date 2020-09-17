@@ -2,12 +2,14 @@
 
 classdef Constants
     properties
-        Xaxis;
+        Taxis;
+        Waxis;
     end
     methods
         function obj = Constants() % Constructor
             var = jsondecode(fileread('Project.json'));
-            obj.Xaxis = var.Constants.Xaxis;
+            obj.Taxis = var.Constants.Taxis;
+            obj.Waxis = var.Constants.Waxis;
         end
     end
 end

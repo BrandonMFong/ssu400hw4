@@ -1,6 +1,7 @@
 {
     "Constants": {
-        "Xaxis": 10
+        "Taxis": 10,
+        "Waxis": 100
     },
     "Paths": [
         { "Path": "./src" },
