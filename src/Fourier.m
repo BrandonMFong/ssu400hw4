@@ -19,3 +19,6 @@ for t = -const.Xaxis:const.Xaxis/100:const.Xaxis
     ft(1,i) = V * rect((t - to)/T);
     i = i + 1;
 end
+
+t = -const.Xaxis:const.Xaxis/100:const.Xaxis;
+plot(t,ft);
