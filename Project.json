@@ -1,6 +1,6 @@
 {
     "Constants": {
-        "Xaxis": 100
+        "Xaxis": 10
     },
     "Paths": [
         { "Path": "./src" },
