@@ -12,3 +12,6 @@ try
 catch exception
     throw(exception)
 end
+
+% Defining constants
+const = Constants();

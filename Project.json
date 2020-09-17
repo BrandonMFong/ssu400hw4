@@ -1,6 +1,6 @@
 {
-    "ConstantDefinitions": {
-        "ReferenceFrameNumber": 6
+    "Constants": {
+        "Xaxis": 100
     },
     "Paths": [
         { "Path": "./src" },

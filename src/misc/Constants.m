@@ -2,12 +2,12 @@
 
 classdef Constants
     properties
-        RefNum;
+        Xaxis;
     end
     methods
         function obj = Constants() % Constructor
             var = jsondecode(fileread('Project.json'));
-            obj.RefNum = var.ConstantDefinitions.ReferenceFrameNumber;
+            obj.Xaxis = var.Constants.Xaxis;
         end
     end
 end
