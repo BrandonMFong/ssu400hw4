@@ -20,5 +20,5 @@ for t = -const.Xaxis:const.Xaxis/(10000):const.Xaxis
     i = i + 1;
 end
 
-t = -const.Xaxis:const.Xaxis/100:const.Xaxis;
+t = -const.Xaxis:const.Xaxis/(10000):const.Xaxis;
 plot(t,ft);
