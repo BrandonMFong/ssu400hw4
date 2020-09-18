@@ -11,29 +11,29 @@ T = input('Enter value for T: ')
 V = input('Enter value for V: ')
 
 fprintf('f(t) = %f*rect((t)/%f)\n',V, T);
+fprintf('F(w) = %f*%f*sinc((%f*w)/2)\n',V, T, T);
 
 
 %% RECT %%
 % t = [-100:0.01:100];
 idx = 1;
-ft = zeros(1,const.Taxis*(2*100)); % TODO finish loading array 
+ft_rect = zeros(1,const.Taxis*(2*100)); % TODO finish loading array 
 for t = -const.Taxis:const.Taxis/(10000):const.Taxis
-    ft(1,idx) = V * rect((t)/T);
+    ft_rect(1,idx) = V * rect((t)/T);
     idx = idx + 1;
 end
 
 t = -const.Taxis:const.Taxis/(10000):const.Taxis;
 plot(t,ft);
-
 ylim([-5 5])
 
 % TODO get fourier transform
 
 %% SINC %%
 idx = 1;
-FT = zeros(1,const.Taxis*(2*100)); % TODO finish loading array 
+ft_sinc = zeros(1,const.Taxis*(2*100)); % TODO finish loading array 
 for w = -const.Taxis:const.Taxis/(10000):const.Taxis
-    FT(1,idx) = V * T * sinc((T*w)/2);
+    ft_sinc(1,idx) = V * T * sinc((T*w)/2);
     idx = idx + 1;
 end
 
